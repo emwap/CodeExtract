@@ -25,3 +25,12 @@ executable codeExtract
   main-is: CodeExtract.hs
   -- other-modules:       
   build-depends:       base >= 4.5 && < 4.7, pandoc-types ==1.10.*, pandoc ==1.10.*, containers >= 0.5 && < 0.7, data-default, filepath
+
+executable codePerform
+  main-is: perform.hs
+  build-depends      : base         >= 4.5    && < 4.7
+                     , pandoc-types == 1.10.*
+                     , pandoc       == 1.10.*
+                     , containers   >= 0.5    && < 0.7
+                     , process
+                     , filepath 
